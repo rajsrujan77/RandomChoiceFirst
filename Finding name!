@@ -1,0 +1,13 @@
+var text = prompt("Write a paragraph about you ");
+var myName = prompt("What is your name?");
+var hits = [];
+for ( i = 0; i < text.length; i++){
+    if ( text[i] === myName[0]){
+        for ( j=i; j < (myName.length+i); j++){
+            hits.push(text[j]);
+        }
+        }
+    }
+    if ( hits.length===0 ){
+        console.log("Your name wasn't found!");}
+        else {console.log(hits);}
